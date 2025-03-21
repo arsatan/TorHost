@@ -30,4 +30,4 @@ HiddenServicePort {HiddenServiceWebServerPort} 127.0.0.1:{WebServerPort}
 
 #HiddenServicePort 80 127.0.0.1:8080
 #HiddenServicePort 22 127.0.0.1:2222
-#HiddenServicePort 81 127.0.0.1:5000
+#HiddenServicePort 81 127.0.0.1:8081
