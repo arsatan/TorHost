@@ -11,6 +11,7 @@ TorHost.exe -r – Remove the TorHost service.
 A hostname file will be generated in the *Tor\hidden_service* subdirectory. This file contains the onion address of your Tor hidden service. After a few minutes of waiting, the following services will become accessible:
 
  - **WebAPI**: <your_tor_service_onion_address>:80
+
  	Availability check: <your_tor_service_onion_address>:80/api/tor/status
 
  - **WebServer**: <your_tor_service_onion_address>:81
