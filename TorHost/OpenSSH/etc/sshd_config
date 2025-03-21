@@ -1,0 +1,15 @@
+#Port 2222
+ListenAddress 0.0.0.0
+HostKey ./ssh/ssh_host_rsa_key
+HostKey ./ssh/ssh_host_ecdsa_key
+HostKey ./ssh/ssh_host_ed25519_key
+PasswordAuthentication yes
+PermitRootLogin no
+Subsystem sftp sftp-server.exe
+LogLevel DEBUG3
+#MaxAuthTries 1000
+#PermitEmptyPasswords yes
+ClientAliveInterval=200
+ClientAliveCountMax=3
+PubkeyAuthentication yes
+AuthorizedKeysFile id_rsa.pub
