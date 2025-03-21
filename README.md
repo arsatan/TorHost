@@ -22,7 +22,7 @@ SSH keys (id_rsa and id_rsa.pub) will be generated in the user’s Windows direc
 **For SSH access**, the SSH client must be configured to use the Tor network. TorHost can also act as a preconfigured SSH client:  
 After launching TorHost on the client device, run the following command from the TorHost directory:
 
-*OpenSSH\ssh -v -i <path_to_remote_server_private_key>/id_rsa -o "ProxyCommand=./Ncat/ncat.exe --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p" <ssh_username>@<remote_tor_service_onion_address>*
+*OpenSSH\ssh -v -i <path_to_ssh_private_key>/id_rsa -o "ProxyCommand=./Ncat/ncat.exe --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p" <ssh_username>@<remote_tor_service_onion_address>*
 
 **Note**: The connection may not succeed on the first attempt.
 
